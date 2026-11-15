@@ -23,13 +23,25 @@ footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-s
 .right::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.1),transparent 35%),linear-gradient(0deg,rgba(0,0,0,.68),transparent 35%)}
 .right img{width:100%;height:100%;object-fit:cover;object-position:50% 46%;position:absolute;inset:0}
 .caption{position:absolute;z-index:2;bottom:clamp(24px,4vw,65px);left:clamp(24px,4vw,65px);right:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:white;font-weight:700}
-.caption span{display:block;margin-top:9px;opacity:.7;letter-spacing:.12em;font-weight:400;font-size:10px}
-@media(max-width:800px){.shell{display:block}.left{position:relative;z-index:2;min-height:100svh;padding:25px 24px 29px;background:linear-gradient(180deg,#0b0b0bf2 0%,#0b0b0bdd 67%,#0b0b0bf5 100%)}.right{position:fixed;inset:0;z-index:0;min-height:0;opacity:.35}.right img{object-position:48% center}.right::after,.caption{display:none}main{padding:55px 0 70px}.logo{max-width:550px}.line{margin:33px 0 26px}h1{font-size:clamp(45px,12vw,73px)}.sub{font-size:16px}footer{font-size:9px;line-height:1.7}}
+.mobile-photo{display:none}.caption span{display:block;margin-top:9px;opacity:.7;letter-spacing:.12em;font-weight:400;font-size:10px}
+@media(max-width:800px){
+.shell{display:block}
+.left{position:relative;z-index:2;min-height:100svh;padding:25px 22px 29px;background:#0b0b0b}
+.right{display:none}
+main{padding:46px 0 58px;max-width:100%}
+.logo{max-width:550px;width:100%}
+.mobile-photo{display:block;margin:30px -22px 0;height:clamp(235px,53vw,375px);overflow:hidden;position:relative;background:#222}
+.mobile-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.line{margin:32px 0 25px}
+h1{font-size:clamp(45px,12vw,73px)}
+.sub{font-size:16px}
+footer{font-size:9px;line-height:1.7}
+}
 </style></head>
 <body><div class="shell"><section class="left">
 <div class="eyebrow"><span class="dot" aria-hidden="true"></span>A NEW NEIGHBORHOOD STAPLE</div>
 <main><img class="logo" src="logo.webp" alt="Downtown Brodega" width="1200" height="640">
-<div class="line"></div><h1>Coming<br>soon.</h1>
+<div class="mobile-photo"><img src="storefront.webp" alt="Downtown Brodega illuminated storefront sign in downtown Albuquerque" loading="eager"></div><div class="line"></div><h1>Coming<br>soon.</h1>
 <p class="sub">Your neighborhood corner store, reimagined. Something good is on the way to the heart of Downtown Albuquerque.</p>
 <p class="location">DOWNTOWN ALBUQUERQUE · NEW MEXICO</p></main>
 <footer><span>Downtown Brodega © 2026</span><span>See you downtown.</span></footer></section>
