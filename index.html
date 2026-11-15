@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101010"><meta name="description" content="Downtown Brodega is coming soon to Downtown Albuquerque, New Mexico.">
+<title>Downtown Brodega | Coming Soon</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;--white:#f7f4ed;--muted:#c7c2b9;--bg:#0b0b0b;--accent:#dfc9a4}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+.shell{min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.91fr)}
+.left{display:flex;flex-direction:column;padding:clamp(24px,4vw,68px) clamp(24px,5.2vw,88px);min-height:100svh}
+.eyebrow{display:flex;align-items:center;gap:10px;letter-spacing:.23em;font-size:10px;font-weight:700;color:var(--muted)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px #dfc9a46b}
+main{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:700px;padding:65px 0}
+.logo{width:min(100%,610px);height:auto;display:block;mix-blend-mode:screen}
+.line{width:56px;height:1px;background:var(--accent);margin:42px 0 30px}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(40px,5.7vw,84px);font-weight:400;letter-spacing:-.05em;line-height:.97;margin:0 0 22px}
+.sub{font-size:clamp(14px,1.3vw,18px);line-height:1.7;color:var(--muted);max-width:400px;margin:0}
+.location{font-size:11px;text-transform:uppercase;letter-spacing:.18em;margin-top:39px;color:var(--accent);font-weight:700}
+footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#88847f}
+.right{position:relative;overflow:hidden;min-height:100svh;background:#302c29}
+.right::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.1),transparent 35%),linear-gradient(0deg,rgba(0,0,0,.68),transparent 35%)}
+.right img{width:100%;height:100%;object-fit:cover;object-position:50% 46%;position:absolute;inset:0}
+.caption{position:absolute;z-index:2;bottom:clamp(24px,4vw,65px);left:clamp(24px,4vw,65px);right:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:white;font-weight:700}
+.caption span{display:block;margin-top:9px;opacity:.7;letter-spacing:.12em;font-weight:400;font-size:10px}
+@media(max-width:800px){.shell{display:block}.left{position:relative;z-index:2;min-height:100svh;padding:25px 24px 29px;background:linear-gradient(180deg,#0b0b0bf2 0%,#0b0b0bdd 67%,#0b0b0bf5 100%)}.right{position:fixed;inset:0;z-index:0;min-height:0;opacity:.35}.right img{object-position:48% center}.right::after,.caption{display:none}main{padding:55px 0 70px}.logo{max-width:550px}.line{margin:33px 0 26px}h1{font-size:clamp(45px,12vw,73px)}.sub{font-size:16px}footer{font-size:9px;line-height:1.7}}
+</style></head>
+<body><div class="shell"><section class="left">
+<div class="eyebrow"><span class="dot" aria-hidden="true"></span>A NEW NEIGHBORHOOD STAPLE</div>
+<main><img class="logo" src="logo.webp" alt="Downtown Brodega" width="1200" height="640">
+<div class="line"></div><h1>Coming<br>soon.</h1>
+<p class="sub">Your neighborhood corner store, reimagined. Something good is on the way to the heart of Downtown Albuquerque.</p>
+<p class="location">DOWNTOWN ALBUQUERQUE · NEW MEXICO</p></main>
+<footer><span>Downtown Brodega © 2026</span><span>See you downtown.</span></footer></section>
+<aside class="right" aria-label="Storefront concept preview"><img src="storefront.webp" alt="Preview of Downtown Brodega storefront signage" width="1024" height="1536"><div class="caption">A NEW LOOK FOR THE NEIGHBORHOOD<span>Storefront concept preview</span></div></aside>
+</div></body></html>
